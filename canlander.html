@@ -1,0 +1,38 @@
+<html>
+
+<head>
+    <link href="stylesheet.css" rel="stylesheet">
+    <title>Volrath's Library</title>
+</head>
+
+<body class="back">
+    <div class="w3-content w3-section">
+        <img class="mySlides" src="Athreos-God-of-Passage-MtG-Art.jpg" style="width:100%">
+        <img class="mySlides" src="Extinguish-All-Hope-Art-2.jpg" style="width:100%">
+        <img class="mySlides" src="Dead-of-Winter-Modern-Horizons-MtG-Art.jpg" style="width:100%">
+    </div>
+    <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="Standard.html">Standard</a></li>
+        <li><a href="canlander.html">Canadian Highlander</a></li>
+        <li><a href="Commander.html">Commander</a></li>
+    </ul>
+    <script>
+        var myIndex = 0;
+        carousel();
+
+        function carousel() {
+            var i;
+            var x = document.getElementsByClassName("mySlides");
+            for (i = 0; i < x.length; i++) {
+                x[i].style.display = "none";
+            }
+            myIndex++;
+            if (myIndex > x.length) { myIndex = 1 }
+            x[myIndex - 1].style.display = "block";
+            setTimeout(carousel, 5000); // Change image every 2 seconds
+        }
+    </script>
+</body>
+
+</html>

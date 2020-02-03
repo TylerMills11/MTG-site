@@ -5,11 +5,11 @@
     <title>Volrath's Library</title>
 </head>
 
-<body>
+<body class="back">
     <div class="w3-content w3-section">
-        <img class="mySlides" src="Athreos-God-of-Passage-MtG-Art.jpg" style="width:100%">
-        <img class="mySlides" src="Extinguish-All-Hope-Art-2.jpg" style="width:100%">
-        <img class="mySlides" src="Dead-of-Winter-Modern-Horizons-MtG-Art.jpg" style="width:100%">
+        <img class="mySlides" src="Athreos-God-of-Passage-MtG-Art.jpg">
+        <img class="mySlides" src="Extinguish-All-Hope-Art-2.jpg">
+        <img class="mySlides" src="Dead-of-Winter-Modern-Horizons-MtG-Art.jpg">
     </div>
     <ul>
         <li><a href="index.html">Home</a></li>
@@ -30,7 +30,7 @@
             myIndex++;
             if (myIndex > x.length) { myIndex = 1 }
             x[myIndex - 1].style.display = "block";
-            // setTimeout(carousel, 5000); // Change image every 2 seconds
+            setTimeout(carousel, 5000); // Change image every 2 seconds
         }
     </script>
 </body>
